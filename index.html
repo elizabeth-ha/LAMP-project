@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300" rel="stylesheet">
+    <link href="lamp-styles.css" rel="stylesheet">
+    <title>Foodie Search</title>
+  </head>
+  <body>
+    <div id="container">
+    <h1>Food Search for Foodies</h1>
+    <form action="lamp-results.php" method="post">
+
+      <h2>Restaurant Type</h2>
+			<select name="rs-type">
+				<option value="NULL">No Preference</option>
+				<option>Japanese</option>
+				<option>American</option>
+				<option>Mexican</option>
+				<option>Thai</option>
+				<option>Spanish</option>
+				<option>Vegan</option>
+			</select>
+
+      <h2>Price Range</h2>
+			<p>
+				<input type="radio" name="price" value="NULL" checked="checked">Any
+				<input type="radio" name="price" value="1">$
+				<input type="radio" name="price" value="2">$$
+				<input type="radio" name="price" value="3">$$$
+			</p>
+
+      <h2>Search Zip Code</h2>
+			<select name="zip-code">
+				<option value="NULL">All Zip Codes</option>
+				<option>10003</option>
+				<option>10009</option>
+				<option>10010</option>
+				<option>10011</option>
+				<option>10012</option>
+				<option>10014</option>
+			</select>
+
+			<h2>Display Options</h2>
+			<h3>Show:</h3>
+			<p>
+				<input type="radio" name="display-type" value="rs" checked="checked">Restaurants
+				<input type="radio" name="display-type" value="food">Food Dishes
+			</p>
+			<h3>Order by:</h3>
+			<p>
+				<input type="radio" name="order-by" value="name" checked="checked">Name
+				<input type="radio" name="order-by" value="price">Price
+				<input type="radio" name="order-by" value="rating DESC">Ratings
+			</p>
+			<h3>Show top:</h3>
+			<p>
+				<input type="radio" name="show-top" value="LIMIT 5">5 Results
+				<input type="radio" name="show-top" value="LIMIT 10">10 Results
+				<input type="radio" name="show-top" value="NULL" checked="checked">all Results
+			</p>
+			<br>
+      <input id="finish-btn" type="submit" value="Find Food!"/>
+    </form>
+		<br>
+		<h4>or</h4>
+		<button onclick="location.href='review-entry-form.php';">Add A Review</button>
+		<br><br>
+  </div>
+  </body>
+</html>
