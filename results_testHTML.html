@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <link href="lamp-styles.css" rel="stylesheet">
+  <title>Foodie Results</title>
+</head>
+<body>
+  <div id="header">
+    <!-- foodie title, detail fields that were specified -->
+    <!-- showing: "all/top 10/top 5" restaurants/food dishes
+          that are: type, price, zipcode
+          ordered by: name/price/ratings -->
+    <h1>Results for Foodie</h1>
+    <h2>Showing: top 10 restaurants</h2>
+    <h3>That are: Japanese, $$, in 10003</h3>
+    <h3>Ordered by: name</h3>
+  </div>
+  <!-- some sort of line break? -->
+  <div id="results-container">
+    <!-- IF: CASE R -->
+    <table id="case-R">
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Price Range</th>
+        <th>Rating (out of 5)</th>
+        <th>Address</th>
+        <th>View Details</th>
+      </tr>
+      <tr>
+        <td>Ippudo NY</td>
+        <td>Japanese</td>
+        <td>$$</td>
+        <td>4.4/5</td>
+        <td>65 4th Ave, NY NY 10003</td>
+        <td>view details</td>
+      </tr>
+      <tr>
+        <td>The Smith</td>
+        <td>American</td>
+        <td>$$</td>
+        <td>3.9/5</td>
+        <td>55 3rd Ave, NY NY 10003</td>
+        <td>view details</td>
+      </tr>
+    </table>
+    <br>
+    <!-- IF: CASE F -->
+    <table id="case-F">
+      <tr>
+        <th>Name</th>
+        <th>Item Price</th>
+        <th>Restaurant Name</th>
+        <th>Type</th>
+        <th>Price Range</th>
+        <th>Rating (out of 5)</th>
+        <th>Address</th>
+        <th>View Details</th>
+      </tr>
+      <tr>
+        <td>Edamame</td>
+        <td>$6</td>
+        <td>Ippudo NY</td>
+        <td>Japanese</td>
+        <td>$$</td>
+        <td>4.4/5</td>
+        <td>65 4th Ave, NY NY 10003</td>
+        <td>view details</td>
+      </tr>
+      <tr>
+        <td>Pancakes</td>
+        <td>$12</td>
+        <td>The Smith</td>
+        <td>American</td>
+        <td>$$</td>
+        <td>3.9/5</td>
+        <td>55 3rd Ave, NY NY 10003</td>
+        <td>view details</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
